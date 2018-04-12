@@ -1,2 +1,3 @@
-__title__ = 'pyrun'
-__version__ = '0.0.1'
+__title__ = 'pydeployer'
+__version__ = '0.0.2'
+__license__ = 'MIT License'

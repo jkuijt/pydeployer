@@ -1,6 +1,5 @@
 import os
 import ftplib
-from ftplib import FTP
 
 ftp = FTP('<ip>')
 ftp.login("<name>", "<password>")
