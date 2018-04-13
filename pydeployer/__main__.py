@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 def main():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('dat file', help='The project dat file', nargs='?')
+	parser.add_argument('dat file', help='The project dat file')
 	parser.print_help()
 	
 def create_dat():
