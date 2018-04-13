@@ -1,5 +1,8 @@
+import logging
 import os
 import ftplib
+
+logger = logging.getLogger(__name__)
 
 ftp = FTP('<ip>')
 ftp.login("<name>", "<password>")
