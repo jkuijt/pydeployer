@@ -1,0 +1,11 @@
+{
+    "source": [
+        "pydeployer\\client.py",
+        "pydeployer\\deploy.py",
+        "pydeployer\\security.py",
+        "pydeployer\\user.py",
+        "pydeployer\\__init__.py",
+        "pydeployer\\__main__.py",
+        ".\\setup.py"
+    ]
+}
