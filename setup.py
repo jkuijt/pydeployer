@@ -16,8 +16,7 @@ setup(
     entry_points={
         'console_scripts': [
             'pydeployer = pydeployer.__main__:main',
-			'pydeployer-create = pydeployer.setup_project:main'
         ],
     },
-	install_requires=[],
+	install_requires=['passlib'],
 )  
