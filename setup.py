@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name='pydeployer',
-    version='0.0.2',
+    version='0.1.0',
     description='Python toolkit for deploying local project to a remote server.',
     url='https://github.com/jkuijt/pydeployer',
     author='Jasper Kuijt',
