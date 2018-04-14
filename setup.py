@@ -18,5 +18,5 @@ setup(
             'pydeployer = pydeployer.__main__:main',
         ],
     },
-	install_requires=['passlib'],
+	install_requires=['passlib','cryptography'],
 )  
