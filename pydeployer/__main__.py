@@ -89,11 +89,12 @@ def read_project_file(fn):
         logger.warning("Deploy file not found. Creating one.")
         return create_project_file(fn)
 
+
 def create_project_file(fn):
     fh = open(fn, 'w')
     deploy_obj = deploy.create_deploy()
     fh.write(deploy_obj.to_string())
-    return fh, deploy_obj
+    return fh, deploy_obj.data
 
 
 if __name__ == '__main__':
