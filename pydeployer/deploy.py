@@ -13,23 +13,23 @@ def create_deploy():
     for key in data_extension:
         deploy.data[key] = []
 
-    _scan_directory(deploy, ".", ".")
+    _scan_directory(deploy, ".")
     return deploy
 
 
-def _scan_directory(obj, dir, subdir):
+def _scan_directory(obj, dir):
     for file in os.listdir(dir):
-        if os.path.isdir(file):
-            _scan_directory(obj, file, file)
+        if os.path.isdir(dir + "\\" + file):
+            _scan_directory(obj, os.path.join(dir, file))
 
         _, ex = os.path.splitext(file)
         for key in data_extension:
             for ext in data_extension[key]:
                 if ext == ex:
-                    obj.data[key].append(subdir + '\\' + file)
-                    print("Adding file: " + subdir + '\\' + file)
+                    obj.data[key].append(dir + '\\' + file)
+                    print("Adding file: " + dir + '\\' + file)
                 else:
-                    print("Ignoring file: " + subdir + "\\" + file)
+                    print("Ignoring file: " + dir + "\\" + file)
 
         # logger.info("Found file: " + subdir + '\\' + file)
 
